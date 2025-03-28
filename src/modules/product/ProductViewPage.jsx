@@ -20,10 +20,6 @@ const ProductViewPage = () => {
     const {
         token: { colorBorder },
     } = theme.useToken();
-
-    const params = new URLSearchParams(location.search);
-    const scrollPosition = params.get('scroll');
-
     const {data,isLoading} = useGetOneQuery({
         id,
         key: KEYS.get_variation,
@@ -71,7 +67,7 @@ const ProductViewPage = () => {
                     <Button
                         type={"primary"}
                         icon={<ArrowLeftOutlined/>}
-                        onClick={() => navigate(`/${userId}/${lang}?scroll=${scrollPosition}`)}
+                        onClick={() => navigate(`/${userId}/${lang}`)}
                     >
                         {t("Back")}
                     </Button>
