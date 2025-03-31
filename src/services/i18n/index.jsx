@@ -3,10 +3,12 @@ import { initReactI18next } from "react-i18next";
 import config from "../../config";
 import uz from '../../assets/lang/uz.json'
 import ru from '../../assets/lang/ru.json'
+import en from '../../assets/lang/en.json'
 
 const resources = {
     UZ: {translation: uz},
-    RU: {translation: ru}
+    RU: {translation: ru},
+    EN: {translation: en}
 }
 
 i18n
