@@ -41,7 +41,7 @@ const GlobalStyles = createGlobalStyle`
         -moz-appearance: textfield;
     }
     .active button {
-        background-color: #EC1B24;
+        background-color: #FFB44F;
         color: #fff;
         font-weight: 500;
     }
